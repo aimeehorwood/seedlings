@@ -119,30 +119,4 @@ describe("/login", () => {
 
 
 
-// describe("PATCH, when user adds plant to their garden", () => {
-//     beforeEach(async () => {
-//         const user = new User({username:"test test",password: "Password!12345678",email: "test@test.com", fullName:"Test Person", address: "123 Person Street"})
-//        await user.save();
-//        token = TokenGenerator.jsonwebtoken(user.id);
-//     });
-
-//     afterEach( async () => {
-//         await User.deleteOne({email: "test@test.com"})
-//     })
-
-//     test("the response code is 200 when user adds plant to their garden", async () => {
-//         let [user] = await User.find({email: "test@test.com"})
-//         const id = await user._id
-
-//         let response = await request(app)
-//         .patch(`/garden/${id}`)
-//         .set("Authorisation", `Bearer ${token}`)
-//         .send( {plant_id: `${plant_id}`})
-//         expect(response.status).toEqual(200)
-//         const [updatedUser] = await User.find({_id: id})
-//         expect(updatedUser.userGardenPatch.length).toBe(1)
-//     })
-// })
-
-
 
