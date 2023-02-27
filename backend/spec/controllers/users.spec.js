@@ -86,14 +86,7 @@ describe("/login", () => {
       await User.deleteOne({ email: "test@person.com" });
     });
 
-    //  xdescribe("POST, when email and password are provided", () => {
-    //   test("the response code is 201", async () => {
-    //     let response = await request(app)
-    //       .post("/login")
-    //       .send({ email: "test@person.com", password: "passwordQ123_12uij!" });
-    //     expect(response.statusCode).toBe("201");
-    //   });
-    // }); 
+
  
     describe('POST, when password is missing', () => {
         test('response code is 400', async () => {
